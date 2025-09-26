@@ -20,11 +20,10 @@ jobs:
         run: |
           mkdir -p artifacts
           tar --no-xattrs --no-acls --warning=no-unknown-keyword \
-            -czf "artifacts/${RELEASE_NAME}" \
-            . \
             --exclude='.git' \
             --exclude='artifacts' \
-            --exclude='.github'
+            --exclude='.github' \
+            -czf "artifacts/${RELEASE_NAME}" .
 
       - name: Configure SSH
         run: |
