@@ -1,8 +1,8 @@
 <?php
 define("HOST", 'localhost');
-define("DBNAME", 'rojgar_india');
-define("DBUSER", 'root');
-define("DBPASSWORD",'');
+define("DBNAME", 'rojgariindia');
+define("DBUSER", 'rojgari');
+define("DBPASSWORD", 'Hitesh@123');
 
 class Databaseclass
 {
